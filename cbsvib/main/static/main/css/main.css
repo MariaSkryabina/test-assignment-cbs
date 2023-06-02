@@ -43,12 +43,10 @@ main .features {
     margin-top: 100px;
 }
 
-main .features h1 {font-size: 50px;}
-main .features p {max-width: 400px;margin:20px auto}
+main .features h1 {font-size: 40px;}
+main .features p {max-width: 400px;margin:20px auto;}
 
-users .content-section {
-    float: center;
-    color: #394A55;
-    text-align: center;
-    width: 75%;
-    margin-top: 100px;}
+img {
+  max-width: 50%;
+  height: auto;
+}

@@ -1,12 +1,21 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}{{ title }}{% endblock %}
+{% block title %}Мероприятия{% endblock %}
 
 {% block content %}
 
-<div class="features">
-    <h1>{{ title }}</h1>
-    <p> Здравсвуйте! Наши мероприятия</p>
-</div>
+    <div class="content-section">
+        <h1> Наши мероприятия </h1>
+
+        {% for el in events %}
+            <div>
+                <h5>{{el.title}}</h5>
+                <p>{{ el.date }}</p>
+            </div>
+
+            <div class="media">
+                <img src="{{ el.image.url }}" />
+            </div>
+        {% endfor %}
+    </div>
 {% endblock%}
-l>
